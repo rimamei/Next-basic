@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
         <h1 className={style['title-page']}>Welcome Rima</h1>
         {Array(10).fill('').map((_, i) => (
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit obcaecati esse, aliquid iure labore! Architecto necessitatibus vel, error doloremque quisquam molestias magni inventore ducimus, ea repudiandae quis nam recusandae?</p>
+          <p key={i}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit obcaecati esse, aliquid iure labore! Architecto necessitatibus vel, error doloremque quisquam molestias magni inventore ducimus, ea repudiandae quis nam recusandae?</p>
         ))}
         <img src='/image/rima.jpg' style={{ height: 200, width: 200 }} alt='post image' />
         {Array(10).fill('').map((_, i) => (
